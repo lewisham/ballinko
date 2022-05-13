@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class UITest : UIBase
 {
     Recorder m_Recorder;
+    public int startIdx = 4;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +48,7 @@ public class UITest : UIBase
         if (m_Recorder == null)
         {
             m_Recorder = gameObject.AddComponent<Recorder>();
-            m_Recorder.startIdx = 3;
+            m_Recorder.startIdx = startIdx;
         }
         else
         {

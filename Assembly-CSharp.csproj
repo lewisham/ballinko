@@ -53,10 +53,13 @@
     <UnityVersion>2020.3.14f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Recorder.cs" />
     <Compile Include="Assets\Scripts\UITest.cs" />
+    <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\UIBase.cs" />
-    <Compile Include="Assets\Scripts\Ball.cs" />
+    <Compile Include="Assets\Singleton.cs" />
+    <Compile Include="Assets\RecordManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
