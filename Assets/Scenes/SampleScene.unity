@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 14296596}
   - component: {fileID: 14296598}
   m_Layer: 5
-  m_Name: Image (5)
+  m_Name: heat6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 71063814}
   - component: {fileID: 71063816}
   m_Layer: 5
-  m_Name: Image (6)
+  m_Name: heat7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1356,7 +1356,7 @@ GameObject:
   - component: {fileID: 597269601}
   - component: {fileID: 597269603}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: heat5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1985,7 +1985,7 @@ GameObject:
   - component: {fileID: 843869863}
   - component: {fileID: 843869865}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: heat3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2085,7 +2085,7 @@ GameObject:
   - component: {fileID: 965246136}
   - component: {fileID: 965246138}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: heat2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2275,7 +2275,7 @@ GameObject:
   - component: {fileID: 1082275001}
   - component: {fileID: 1082275003}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: heat4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3615,7 +3615,7 @@ GameObject:
   - component: {fileID: 1738214895}
   - component: {fileID: 1738214897}
   m_Layer: 5
-  m_Name: Image (7)
+  m_Name: heat8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3931,7 +3931,7 @@ GameObject:
   - component: {fileID: 1995918194}
   - component: {fileID: 1995918196}
   m_Layer: 5
-  m_Name: Image
+  m_Name: heat1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4489,7 +4489,7 @@ GameObject:
   - component: {fileID: 2133750504}
   - component: {fileID: 2133750506}
   m_Layer: 5
-  m_Name: Image (8)
+  m_Name: heat9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

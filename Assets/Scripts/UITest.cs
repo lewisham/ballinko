@@ -12,7 +12,6 @@ public class UITest : UIBase
         for (int i = 1; i <= 5; i++)
         {
             string name = $"BG/Up/Fire{i}/BtnFire";
-            Debug.Log(name);
             var btn = transform.Find(name).GetComponent<Button>();
             BindFireEvent(btn, i);
         }
@@ -38,6 +37,5 @@ public class UITest : UIBase
         offset.x = UnityEngine.Random.Range(-offx, offx);
         offset.y = UnityEngine.Random.Range(-offy, offy);
         ball.transform.position = tf.position + offset;
-        Debug.Log($"Fire {idx}");
     }
 }
