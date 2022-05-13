@@ -22,7 +22,15 @@ class Ball: MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         string name = collision.gameObject.name;
-        Debug.Log($"OnTriggerEnter2D {collision.gameObject.name}");
+        //Debug.Log($"OnTriggerEnter2D {collision.gameObject.name}");
+        name = name.Replace("heat", "");
+        int idx = 0;
+        int.TryParse(name, out idx);
+        if (idx > 0)
+        {
+            RecordManager.Instance.AddEnterHoleCount(idx);
+            RecordManager.Instance.GetUITest().UpdateEnterBallCount(idx);
+        }
         GameObject.Destroy(gameObject);
     }
 
