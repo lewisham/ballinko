@@ -11,7 +11,9 @@ public class UITest : UIBase
         BindUI();
         for (int i = 1; i <= 5; i++)
         {
-            var btn = transform.Find("BG/Up/Fire{i}/BtnFire").GetComponent<Button>();
+            string name = $"BG/Up/Fire{i}/BtnFire";
+            Debug.Log(name);
+            var btn = transform.Find(name).GetComponent<Button>();
             BindFireEvent(btn, i);
         }
     }
@@ -27,10 +29,15 @@ public class UITest : UIBase
 
     void OnStartFire(int idx)
     {
-        var tf = transform.Find("BG/Up/Fire{i}/FirePos");
+        var tf = transform.Find($"BG/Up/Fire{idx}/FirePos");
         var prefab = UnityEditor.AssetDatabase.LoadAssetAtPath<GameObject>("Assets/UI/Prefabs/Ball.prefab");
         var ball = GameObject.Instantiate(prefab, transform);
-        ball.transform.localPosition = tf.localPosition;
+        var offset = Vector3.zero;
+        float offx = 0.001f;
+        float offy = 0.001f;
+        offset.x = UnityEngine.Random.Range(-offx, offx);
+        offset.y = UnityEngine.Random.Range(-offy, offy);
+        ball.transform.position = tf.position + offset;
         Debug.Log($"Fire {idx}");
     }
 }
