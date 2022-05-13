@@ -3,10 +3,20 @@ using UnityEngine;
 
 class Ball: MonoBehaviour
 {
-
+    float m_Elapsed;
+    public float TimeOut = 15.0f;
     public void Start()
     {
         
+    }
+
+    private void Update()
+    {
+        m_Elapsed += Time.deltaTime;
+        if (m_Elapsed > TimeOut)
+        {
+            GameObject.Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

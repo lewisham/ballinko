@@ -31,11 +31,10 @@ public class UITest : UIBase
         var tf = transform.Find($"BG/Up/Fire{idx}/FirePos");
         var prefab = UnityEditor.AssetDatabase.LoadAssetAtPath<GameObject>("Assets/UI/Prefabs/Ball.prefab");
         var ball = GameObject.Instantiate(prefab, transform);
-        var offset = Vector3.zero;
-        float offx = 0.001f;
-        float offy = 0.001f;
-        offset.x = UnityEngine.Random.Range(-offx, offx);
-        offset.y = UnityEngine.Random.Range(-offy, offy);
-        ball.transform.position = tf.position + offset;
+        ball.transform.position = tf.position;
+        Rigidbody2D rigidbody2D = ball.GetComponent<Rigidbody2D>();
+        float sx = UnityEngine.Random.Range(-2, 2);
+        float sy = UnityEngine.Random.Range(10, 20);
+        rigidbody2D.velocity = new Vector2(sx, -sy);
     }
 }
