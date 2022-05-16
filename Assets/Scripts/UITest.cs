@@ -37,8 +37,8 @@ public class UITest : UIBase
         float offsetY = UnityEngine.Random.Range(-100, 100) / 1000;
         ball.transform.position = tf.position + new Vector3(offsetX, offsetY);
         Rigidbody2D rigidbody2D = ball.GetComponent<Rigidbody2D>();
-        float sx = UnityEngine.Random.Range(-2, 2);
-        float sy = UnityEngine.Random.Range(10, 20);
+        float sx = UnityEngine.Random.Range(-0.1f, 0.1f);
+        float sy = UnityEngine.Random.Range(0.2f, 0.5f);
         rigidbody2D.velocity = new Vector2(sx, -sy);
         return ball;
     }
