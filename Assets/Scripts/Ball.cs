@@ -1,13 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 class Ball: MonoBehaviour
 {
     float m_Elapsed;
     public float TimeOut = 15.0f;
+    BallPath m_BallPath;
+    public int StartID;
+    public int frame;
+
     public void Start()
     {
-        
+        m_BallPath = new BallPath();
+        m_BallPath.from = StartID;
+        m_BallPath.events = new List<CollisionEvent>();
+        m_BallPath.posistion = new List<int>();
     }
 
     private void Update()
@@ -17,6 +25,7 @@ class Ball: MonoBehaviour
         {
             GameObject.Destroy(gameObject);
         }
+        frame++;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

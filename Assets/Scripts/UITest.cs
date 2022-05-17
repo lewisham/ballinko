@@ -10,6 +10,7 @@ public class UITest : UIBase
     // Start is called before the first frame update
     void Start()
     {
+        Application.targetFrameRate = 30;
         BindUI();
         for (int i = 1; i <= 5; i++)
         {
@@ -40,6 +41,7 @@ public class UITest : UIBase
         float sx = UnityEngine.Random.Range(-0.1f, 0.1f);
         float sy = UnityEngine.Random.Range(0.2f, 0.5f);
         rigidbody2D.velocity = new Vector2(sx, -sy);
+        ball.layer = LayerMask.NameToLayer($"Ball{idx}");
         return ball;
     }
 

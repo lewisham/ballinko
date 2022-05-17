@@ -5,9 +5,14 @@ using UnityEngine.UI;
 
 public class Recorder : MonoBehaviour
 {
-    GameObject m_Ball;
+    Dictionary<int, GameObject> m_Balls;
 
     public int startIdx;
+
+    private void Start()
+    {
+        m_Balls = new Dictionary<int, GameObject>();
+    }
 
     UITest GetUI()
     {
@@ -16,9 +21,13 @@ public class Recorder : MonoBehaviour
 
     public void Update()
     {
-        if (m_Ball == null)
+        for (int i = 0; i < 5; i++)
         {
-            m_Ball = GetUI().OnStartFire(startIdx);
+            if (!m_Balls.ContainsKey(i) || m_Balls[i] == null)
+            {
+                var ball = GetUI().OnStartFire(i + 1);
+                m_Balls[i] = ball;
+            }
         }
     }
 }

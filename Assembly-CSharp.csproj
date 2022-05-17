@@ -60,6 +60,7 @@
     <Compile Include="Assets\RecordManager.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\UIBase.cs" />
+    <Compile Include="Assets\Scripts\BallRecordInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
