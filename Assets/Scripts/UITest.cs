@@ -42,6 +42,8 @@ public class UITest : UIBase
         float sy = UnityEngine.Random.Range(0.2f, 0.5f);
         rigidbody2D.velocity = new Vector2(sx, -sy);
         ball.layer = LayerMask.NameToLayer($"Ball{idx}");
+        var com = ball.GetComponent<Ball>();
+        com.from = idx;
         return ball;
     }
 
@@ -56,6 +58,11 @@ public class UITest : UIBase
         {
             GameObject.Destroy(m_Recorder);
         }
+    }
+
+    void OnClick_BtnSave()
+    {
+        BallPathManager.Instance.Save();
     }
 
     public void UpdateEnterBallCount(int id)

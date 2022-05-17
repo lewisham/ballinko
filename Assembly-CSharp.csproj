@@ -60,7 +60,19 @@
     <Compile Include="Assets\RecordManager.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\UIBase.cs" />
-    <Compile Include="Assets\Scripts\BallRecordInfo.cs" />
+    <Compile Include="Assets\Scripts\BallPath.cs" />
+    <Compile Include="Assets\BallPathManager.cs" />
+    <Compile Include="Assets\LitJson\Netstandard15Polyfill.cs" />
+    <Compile Include="Assets\LitJson\JsonData.cs" />
+    <Compile Include="Assets\LitJson\JsonException.cs" />
+    <Compile Include="Assets\LitJson\JsonMockWrapper.cs" />
+    <Compile Include="Assets\LitJson\JsonMapper.cs" />
+    <Compile Include="Assets\LitJson\JsonReader.cs" />
+    <Compile Include="Assets\LitJson\JsonWriter.cs" />
+    <Compile Include="Assets\LitJson\Lexer.cs" />
+    <Compile Include="Assets\LitJson\JsonDateExtension.cs" />
+    <Compile Include="Assets\LitJson\ParserToken.cs" />
+    <Compile Include="Assets\LitJson\IJsonWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
