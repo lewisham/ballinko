@@ -143,7 +143,7 @@ namespace LitJson
                             IList<PropertyMetadata>> ();
 
             static_writer = new JsonWriter ();
-            static_writer.PrettyPrint = true;//设置为格式化模式，LitJson称其为PrettyPrint（美观的打印），在 Newtonsoft.Json里面则是 Formatting.Indented（锯齿状格式）
+            static_writer.PrettyPrint = false;//设置为格式化模式，LitJson称其为PrettyPrint（美观的打印），在 Newtonsoft.Json里面则是 Formatting.Indented（锯齿状格式）
             static_writer.IndentValue = 4;//缩进空格个数
 
             datetime_format = DateTimeFormatInfo.InvariantInfo;
